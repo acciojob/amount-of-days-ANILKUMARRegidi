@@ -1,12 +1,11 @@
 //your JS code here. If required.
-const daysOfAYear = () =>
+const daysOfAYear = (year) =>
 	{
-		let y = prompt("enter year");
-		if(y%4==0 y%100 != 0)
+		if((year%4===0 year%100 !== 0) || year%400===0)
 		{
-			console.log(366);
+            return 366;
 		}
 		else {
-			console.log(365);
+			return 365;
 		}
 	}
